@@ -104,15 +104,15 @@
                     <input type="text" id="age" class="input-field">
                 </div>
                 <label for="region" class="label">Región:</label>
-                    <select name="region" id="region">
+                    <select name="region" id="region" onchange=dropdownChange() value="">
                         <option disabled selected value> -- </option>
                         <option>-SACRO SANTO IMPERIO DE ABEL-</option>
-                        <option value="ssi">Abel</option>
-                        <option value="ssi">Ilmora</option>
-                        <option value="ssi">Helenia</option>
+                        <option value="abel">Abel</option>
+                        <option value="ilmora">Ilmora</option>
+                        <option value="helenia">Helenia</option>
                         <option value="dalaborn">Dalaborn</option>
                         <option value="alberia">Alberia</option>
-                        <option value="gargados">Gargados</option>
+                        <option value="galgados">Galgados</option>
                         <option value="arlan">Arlan</option>
                         <option value="kanon">Kanon</option>
                         <option>-LA ALIANZA AZUR-</option>
@@ -146,12 +146,14 @@
                         <option value="shivat">Shivat</option>
                     </select>
                 </div>
-                <label for="socialc" class="label">Clase Social:</label>
-                    <select name="socialc" id="socialc">
+                <div class="input-box" id="regiondiv" hidden>
+                <label for="socialclass" class="label">Clase Social:</label>
+                    <select name="socialclass" id="socialclass">
+                        <option disabled selected value> -- </option>
                     </select>
                 </div>
+                    <script src="javaS/char-des.js"></script>
+                </div>
             </div>
-        </div>
-    </div>
 </body>
 </html>
